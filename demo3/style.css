@@ -1,0 +1,11 @@
+html { background: #000;}
+body { background: #ccc; width: 70%; padding: 1em;}
+h1 { background: #333; width: 70%; padding: 1em; 
+	color: #ccc;}
+div { width: 20px; height: 20px; 
+	background:  red ;
+	border-radius: 10px;
+	position: absolute;
+	transition: width .2s ease-out;
+	-webkit - transition: width .2s ease-out;}
+	.state2 {width: 500px; }
