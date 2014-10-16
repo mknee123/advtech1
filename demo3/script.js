@@ -1,7 +1,7 @@
 var  username = "Miranda";
 // alert("Hello "+ username);
 //languages offer other useful event than onclick
-document.onmouseover = 
+document.onmousemove = 
 function(evt) { 
 	makeOneCircle(evt);
 }
