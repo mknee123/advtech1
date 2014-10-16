@@ -1,13 +1,18 @@
 var  username = "Miranda";
 // alert("Hello "+ username);
-document.onclick = 
+//languages offer other useful event than onclick
+document.onmouseover = 
 function(evt) { 
 	makeOneCircle(evt);
 }
 
-function makeOneCircle(){
-	evt = (evt || event)//makes all browsers understand the event
+function makeOneCircle(evt){
+	evt = (evt || event) //makes all browsers understand the event
 	//make a new circle
 	var newc = document.createElement("div");
-	document.appendChild(newc);
+	//set location of new div to where the mouse is
+	newc.style.left = evt.clientX + "px";
+	newc.style.top = evt.clientY + "px";
+	//add "body" below
+	document.body.appendChild(newc);
 }
